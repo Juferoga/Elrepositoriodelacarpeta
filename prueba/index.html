@@ -7,117 +7,22 @@
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
   </head>
   <body>
-      <img id="video-volume-down" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/volume_down-27df0a18eba1b2a2255f578ab4065314.png">
-  <img id="video-volume-down-hover" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/volume_down-hover-e586102c990723e2667f04ed5ab159b7.png">
-  <img id="video-volume-up" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/volume_up-96f8a7992f8a6a7ba65b9d26a2005cd1.png">
-  <img id="video-volume-up-hover" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/volume_up-hover-bc1957afe021613ebca324ea7ecbefbe.png">
-  <img id="video-seek-back" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/seek_back-96fda8ab42ce533dd761cf5fcc6a3043.png">
-  <img id="video-seek-back-hover" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/seek_back-hover-9974485365b16f651317a466059425e6.png">
-  <img id="video-seek-forward" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/seek_fwd-52bd69df1685fc972042791eca296a4e.png">
-  <img id="video-seek-forward-hover" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/seek_fwd-hover-b7291a93b0be9db0049f1ffebfaf984d.png">
-  <img id="video-play" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/play-0ce2810c6e64b8442902344d3b745024.png">
-  <img id="video-play-hover" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/play-hover-b56e72c9931ee9c5b8de64dcf97e13ca.png">
-  <img id="video-pause" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/pause-0f2e7a54c29e568430633b92a2ec21f5.png">
-  <img id="video-pause-hover" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/pause-hover-47334e2f6c96fa0f9a92d2a93aa89fe5.png">
-  <img id="video-snap" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/snap-4178b590b9177eda6987b8aff9400a40.png">
-  <img id="video-snap-hover" crossorigin="anonymous"
-      src="https://assets-prod.reticulum.io/hubs/assets/video-overlay/snap-hover-e0c072997678aa86135e64e8e300998c.png">
     <a-scene>
       
       <a-assets>
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" crossorigin="anonymous">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossorigin="anonymous">
+        <video id="fire" autoplay loop="true" src="./Fuego.mp4"></video>
       </a-assets>
 
       <!-- Primitives. -->
-
-      <a-entity class="ui interactable-ui">
-      <a-entity class="freeze-menu" visibility-while-frozen="withinDistance: 10;" visible="">
-      <a-entity mixin="rounded-text-action-button" is-remote-hover-target="" tags="singleActionButton:true" pin-networked-object-button="tipSelector:.pin-button-tip; labelSelector:.pin-button-label; hideWhenPinnedSelector:.hide-when-pinned;" position="0 0.125 0.01" slice9="" text-button="" visible="">
-      <a-entity class="pin-button-label" visible="false" text=" value:pin; width:1.75; align:center;" text-raycast-hack="" position="0 0 0.01">
-      </a-entity>
-      </a-entity>
-      <a-entity class="pin-button-tip" text="value:Pinning will broadcast this object to Discord.; width:1.75; align:center; color:#fff;" visible="false" text-raycast-hack="" slice9="                                    color: #0F40A9;                                    width: 1.8;                                    height: 0.2;                                    left: 64;                                    top: 64;                                    right: 66;                                    bottom: 66;                                    opacity: 1.0;                                    src: #button" position="0 0.6 0.01">                            </a-entity>                            <a-entity is-remote-hover-target="" tags="singleActionButton:true;" mixin="rounded-text-button" camera-focus-button="track: false" position="-0.25 0.375 0.01" slice9="" text-button="" visible="">                                <a-entity text=" value:focus; width:1.75; align:center;" text-raycast-hack="" position="0.075 0 0.02"></a-entity>                                <a-image icon-button="image: #camera-action; hoverImage: #camera;" scale="0.165 0.165 0.165" position="-0.125 0.005 0.02" material="" geometry="" src="#camera-action"></a-image>                            </a-entity>                            <a-entity is-remote-hover-target="" tags="singleActionButton:true;" mixin="rounded-text-button" camera-focus-button="track: true" position="0.25 0.375 0.01" slice9="" text-button="" visible="">                                <a-entity text=" value:track; width:1.75; align:center;" text-raycast-hack="" position="0.075 0 0.02"></a-entity>                                <a-image icon-button="image: #camera-action; hoverImage: #camera-action;" scale="0.165 0.165 0.165" position="-0.125 0.005 0.01" material="" geometry="" src="#camera-action"></a-image>                            </a-entity>                            <a-entity mixin="rounded-button" is-remote-hover-target="" tags="singleActionButton: true;" class="hide-when-pinned" remove-networked-object-button="" position="0 -0.375 0.01" slice9="" text-button="" visible="">                                <a-image icon-button="image: #remove-action; hoverImage: #remove-action;" scale="0.165 0.165 0.165" position="0 0 0.001" material="" geometry="" src="#remove-action"></a-image>                            </a-entity>                            <a-entity mixin="rounded-button" is-remote-hover-target="" tags="singleActionButton: true;" class="hide-when-pinned" drop-object-button="" position="0 -0.625 0.01" slice9="" text-button="" visible="">                                <a-image icon-button="image: #drop-action; hoverImage: #drop-action;" scale="0.165 0.165 0.165" position="0 0 0.001" material="" geometry="" src="#drop-action"></a-image>                            </a-entity>                            <a-entity is-remote-hover-target="" tags="singleActionButton:true;" mixin="rounded-text-button" open-media-button="" position="0.43 -0.375 0.01" slice9="" text-button="">                                <a-entity text="value:open link; width:1.75; align:center;" text-raycast-hack="" position="0 0 0.02"></a-entity>                            </a-entity>                            <a-entity is-remote-hover-target="" tags="singleActionButton:true;" mixin="rounded-text-button" clone-media-button="" position="-0.43 -0.375 0.01" slice9="" text-button="">                                <a-entity text="value:clone; width:1.75; align:center;" text-raycast-hack="" position="0 0 0.02"></a-entity>                            </a-entity>                            <a-entity mixin="rounded-action-button" tags="isHoldable: true; holdableButton: true;" is-remote-hover-target="" transform-button="" transform-button-selector="" position="-0.3 -0.125 0.01" slice9="" text-button="">                                <a-image icon-button="image: #rotate-action; hoverImage: #rotate-action;" scale="0.165 0.165 0.165" position="0 0 0.001" material="" geometry="" src="#rotate-action"></a-image>                            </a-entity>                            <a-entity mixin="rounded-action-button" tags="singleActionButton: true;" is-remote-hover-target="" transform-button="mode: align;" position="0 -0.125 0.01" slice9="" text-button="">                                <a-image icon-button="image: #recenter-action; hoverImage: #recenter-action;" scale="0.165 0.165 0.165" position="0 0 0.001" material="" geometry="" src="#recenter-action"></a-image>                            </a-entity>                            <a-entity mixin="rounded-action-button" tags="isHoldable: true; holdableButton: true;" is-remote-hover-target="" transform-button="mode: scale;" position="0.3 -0.125 0.01" slice9="" text-button="">                                <a-image icon-button="image: #scale-action; hoverImage: #scale-action;" scale="0.165 0.165 0.165" position="0 0 0.001" material="" geometry="" src="#scale-action"></a-image>                            </a-entity>                        </a-entity>                    </a-entity><a-entity class="ui interactable-ui hover-container" visible="false">                    <a-image is-remote-hover-target="" tags="singleActionButton: true; isHoverMenuChild: true;" icon-button="image: #video-snap; hoverImage: #video-snap-hover; activeImage: #videosnapplay; activeHoverImage: #video-snap-hover" scale="0.075 0.075 0.075" position="0 0.225 0" class="video-snap-button" material="" geometry="" src="#video-snap"></a-image>                    <a-entity class="video-time-label" text="value: 0; anchor: center; align: center; color: #aaa;" text-raycast-hack="" position="0 -0.24 0" scale="0.75 0.75 0.75"></a-entity>                    <a-entity class="video-volume-label" text="value: 0%; anchor: center; align: center; color: #ccc; letterSpacing: 4;" text-raycast-hack="" position="0.0 0.14 0.015" scale="1.25 1.25 1.25"></a-entity>                    <a-image is-remote-hover-target="" tags="singleActionButton: true; isHoverMenuChild: true;" icon-button="image: #video-volume-down; hoverImage: #video-volume-down-hover;" scale="0.075 0.075 0.075" position="-0.275 0.14 0" class="ui video-volume-down-button" material="" geometry="" src="#video-volume-down"></a-image>                    <a-image is-remote-hover-target="" tags="singleActionButton: true; isHoverMenuChild: true;" icon-button="image: #video-volume-up; hoverImage: #video-volume-up-hover;" scale="0.075 0.075 0.075" position="0.275 0.14 0" class="ui video-volume-up-button" material="" geometry="" src="#video-volume-up"></a-image>                    <a-entity class="video-playback">                        <a-image is-remote-hover-target="" tags="singleActionButton: true; isHoverMenuChild: true;" icon-button="image: #video-seek-back; hoverImage: #video-seek-back-hover;" scale="0.1 0.1 0.1" position="-0.3 -0.125 0" class="ui video-seek-back-button" visible="false" material="" geometry="" src="#video-seek-back"></a-image>                        <a-image is-remote-hover-target="" tags="singleActionButton: true; isHoverMenuChild: true;" icon-button="image: #video-pause; hoverImage: #video-pause-hover; activeImage: #video-play; activeHoverImage: #video-play-hover" scale="0.15 0.15 0.15" position="0 -0.125 0" class="ui video-playpause-button" visible="false" material="" geometry="" src="#video-pause">
-      </a-image>
-      <a-image is-remote-hover-target="" tags="singleActionButton: true; isHoverMenuChild: true;" icon-button="image: #video-seek-forward; hoverImage: #video-seek-forward-hover;" scale="0.1 0.1 0.1" position="0.3 -0.125 0" class="ui video-seek-forward-button" visible="false" material="" geometry="" src="#video-seek-forward">
-      </a-image>
-      </a-entity>
-      </a-entity>
-
-      <template id="video-hover-menu">
-          <a-entity class="ui interactable-ui hover-container"
-              visible="false">
-              <a-image is-remote-hover-target
-                  tags="singleActionButton: true; isHoverMenuChild: true;"
-                  icon-button="image: #video-snap; hoverImage: #video-snap-hover; activeImage: #videosnapplay; activeHoverImage: #video-snap-hover"
-                  scale="0.075 0.075 0.075" position="0 0.225 0"
-                  class="video-snap-button">
-              </a-image>
-              <a-entity class="video-time-label"
-                  text="value: 0; anchor: center; align: center; color: #aaa;"
-                  text-raycast-hack position="0 -0.24 0"
-                  scale="0.75 0.75 0.75">
-              </a-entity>
-              <a-entity class="video-volume-label"
-                  text="value: 0%; anchor: center; align: center; color: #ccc; letterSpacing: 4;"
-                  text-raycast-hack position="0.0 0.14 0.015"
-                  scale="1.25 1.25 1.25">
-              </a-entity>
-              <a-image is-remote-hover-target
-                  tags="singleActionButton: true; isHoverMenuChild: true;"
-                  icon-button="image: #video-volume-down; hoverImage: #video-volume-down-hover;"
-                  scale="0.075 0.075 0.075" position="-0.275 0.14 0"
-                  class="ui video-volume-down-button">
-              </a-image>
-              <a-image is-remote-hover-target
-                  tags="singleActionButton: true; isHoverMenuChild: true;"
-                  icon-button="image: #video-volume-up; hoverImage: #video-volume-up-hover;"
-                  scale="0.075 0.075 0.075" position="0.275 0.14 0"
-                  class="ui video-volume-up-button">
-              </a-image>
-              <a-entity class="video-playback">
-                  <a-image is-remote-hover-target
-                      tags="singleActionButton: true; isHoverMenuChild: true;"
-                      icon-button="image: #video-seek-back; hoverImage: #video-seek-back-hover;"
-                      scale="0.1 0.1 0.1" position="-0.3 -0.125 0"
-                      class="ui video-seek-back-button" visible="false">
-                  </a-image>
-                  <a-image is-remote-hover-target
-                      tags="singleActionButton: true; isHoverMenuChild: true;"
-                      icon-button="image: #video-pause; hoverImage: #video-pause-hover; activeImage: #video-play; activeHoverImage: #video-play-hover"
-                      scale="0.15 0.15 0.15" position="0 -0.125 0"
-                      class="ui video-playpause-button" visible="false">
-                  </a-image>
-                  <a-image is-remote-hover-target
-                      tags="singleActionButton: true; isHoverMenuChild: true;"
-                      icon-button="image: #video-seek-forward; hoverImage: #video-seek-forward-hover;"
-                      scale="0.1 0.1 0.1" position="0.3 -0.125 0"
-                      class="ui video-seek-forward-button" visible="false">
-                  </a-image>
-              </a-entity>
-          </a-entity>
-      </template>
-
-      <a-plane position="0 .1 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+        <a-video src="#fire" width="60" height="60" position="0 0 -20"></a-video>
 
       <!-- Background sky. -->
-      <a-sky height="2048" radius="30" color="green" theta-length="90" width="2048"></a-sky>
+      <a-sky height="2048" radius="30" color="black" theta-length="90" width="2048"></a-sky>
 
       <!-- Ground. -->
-      <a-circle color="cyan" rotation="-90 0 0" radius="32"></a-circle>
+      <a-circle color="gray" rotation="-90 0 0" radius="32"></a-circle>
 
       <!--Tracked controls. -->
       <a-entity hand-controls="hand: left"></a-entity>
