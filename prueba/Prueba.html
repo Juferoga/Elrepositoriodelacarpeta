@@ -14,6 +14,8 @@
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossorigin="anonymous">
         <video id="fire" autoplay loop="true" src="./Fuego.mp4"></video>
         <a-asset-item id="pato" src="duck.gltf"></a-asset-item>
+        <a-asset-item id="boat_large-obj" src="boat_large.obj"></a-asset-item>
+        <a-asset-item id="boat_large-mtl" src="boat_large.mtl"></a-asset-item>
       </a-assets>
 
       <!-- Primitives. -->
@@ -27,6 +29,10 @@
       <a-box scr="#skyTexture" position="6 0 -7"></a-box>
       <a-box scr="#skyTexture" position="-6 0 -7"></a-box>
       <a-box scr="#skyTexture" position="-3 0 -7"></a-box>
+
+      <!--AQUI ESTA EL OBJETO .obj y.mtl-->
+
+      <a-obj-model src="#boat_large-obj" mtl="#boat_large-mtl" position="12 15 12"></a-obj-model>
 
       <!--CIRCUNFERENCIA-->
       
