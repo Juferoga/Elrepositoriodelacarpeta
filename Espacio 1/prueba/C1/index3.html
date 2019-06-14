@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-teleport-controls@0.2.x/dist/aframe-teleport-controls.min.js"></script>
+<script src="https://unpkg.com/aframe-controller-cursor-component@0.2.x/dist/aframe-controller-cursor-component.min.js"></script>
+<script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/random-color.js"></script>
+<script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/snap.js"></script>
+<script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/intersection-spawn.js"></script>
+
+  <head>
+    <meta charset="utf-8">
+    <title>prueba</title>
+    <meta name="description" content="prueba">
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-assets>
+
+      
+        <a-asset-item id="boat_large-obj" src="./sword.obj"></a-asset-item>
+        <a-asset-item id="boat_large-mtl" src="./sword.mtl"></a-asset-item>
+
+    </a-assets>
+
+      <!-- Primitives. -->
+
+      <a-entity obj-model="obj: #boat_large-obj; mtl: #boat_large-mtl" position="-1 0 -5" rotation="0 15 0" scale="0.5 0.5 0.5"></a-entity>
+
+      <!--Tracked controls. -->
+      <a-entity hand-controls="hand: left"></a-entity>
+      <a-entity hand-controls="hand: right"></a-entity>
+      
+    </a-scene>
+  </body>
+</html>
