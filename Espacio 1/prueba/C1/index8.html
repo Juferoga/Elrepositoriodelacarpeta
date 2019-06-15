@@ -12,10 +12,15 @@
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
   </head>
   <body class="a-body ">
+		<a-assets>
+				<a-asset-item id="sword-obj" src="./Objetos/sword.OBJ"></a-asset-item>
+				<a-asset-item id="sword-mtl" src="./Objetos/sword.MTL"></a-asset-item>
+			  </a-assets>
     <a-scene class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
-      
-      <!-- Primitives. -->
-
+		
+		
+	  <!-- Primitives. -->
+	  <a-entity id="SPADA" obj-model="obj=#sword-obj; mtl=#sword-mtl"></a-entity>
       <!--Pared Derecha-->
       <a-box position="11.804 6 11.087" depth="1" height="15" width="15" color="black" id="paredOccidentea" material="color:#dedede"></a-box>
       <a-box position="-3.104 6 11.139" depth="1" height="15" width="15" color="gray" id="paredOccidenteb" material="color:#dedede"></a-box><a-box position="-5.808 3 -9.965" depth="1" height="15" width="15" color="gray" material="color:#034700" geometry="depth:1.57;height:8.73;width:4.48" id="puerta"></a-box>
