@@ -1,3 +1,5 @@
+# NOS MUDAMOS AL REPO DEL GLUD :D
+
 # A frame GLUD. A GludZilla project.
 
 Proyecto que implementa el framework de Mozilla a-frame, construido para experiencias de realidad virtual, 
