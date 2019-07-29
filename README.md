@@ -1,4 +1,4 @@
-# NOS MUDAMOS AL REPO DEL GLUD :D ?????
+# Actualizar node o realizar un git ignore de package-lock.json
 
 # A frame GLUD. A GludZilla project.
 
