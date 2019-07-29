@@ -1,14 +1,13 @@
-# Blender MTL File: 'wooden watch tower2.blend'
+
+# Blender MTL File: 'crate.blend'
 # Material Count: 1
 
-newmtl watchtower
-Ns 0.000000
-Ka 1.000000 1.000000 1.000000
-Kd 0.397386 0.397386 0.397386
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
+newmtl Material.001
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
 Ni 1.000000
 d 1.000000
-illum 1
-map_Kd textures\t_C_3.png
-map_Bump  textures\\Wood_Tower_Nor.jpg
+illum 2
+map_Kd crate.jpg
