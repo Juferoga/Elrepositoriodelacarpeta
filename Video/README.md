@@ -1,4 +1,7 @@
 # Ejemplo mozilla 
+
+## click en la imagen
+
 [![Como lo hace mozilla](http://img.youtube.com/vi/kmk43_2dtn0/0.jpg)](http://www.youtube.com/watch?v=kmk43_2dtn0 "Mozilla Example")
 
 # video explicativo de que se realizo durante el semestre
