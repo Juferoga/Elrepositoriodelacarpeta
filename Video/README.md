@@ -11,8 +11,8 @@ framework A-Frame para la creación de proyectos de realidad virtual.
 
 ## Herramientas utilizadas para la creación del video
 
-1. Filmora 9 o canva??
-2. Filmora libraries of content o canva??
+1. KDEnlive
+2. Nothing
 3. Soundcould for music
 
 ### Contenido del video
