@@ -1,5 +1,5 @@
 # Actualizar node o realizar un git ignore de package-lock.json
-
+https://cristinafsanz.github.io/github-pages
 # A frame GLUD. A GludZilla project.
 
 Proyecto que implementa el framework de Mozilla a-frame, construido para experiencias de realidad virtual, 
