@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mlt title="Anonymous Submission" version="6.6.0" root="/home/glud-mint/JuanF/Elrepositoriodelacarpeta/Video/kdenlive" producer="main bin" LC_NUMERIC="es_CO.UTF-8">
+<mlt title="Anonymous Submission" version="6.9.0" root="/home/juferoga/repositorios/Elrepositoriodelacarpeta/Video/kdenlive" producer="main bin" LC_NUMERIC="es_CO.UTF-8">
  <profile width="1920" frame_rate_den="1" height="1080" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" colorspace="709" sample_aspect_den="1" description="HD 1080p 25 fps" progressive="1" sample_aspect_num="1"/>
  <producer id="1" title="Anonymous Submission" out="287" in="0">
   <property name="length">288</property>
@@ -9,7 +9,7 @@
   <property name="aspect_ratio">1</property>
   <property name="seekable">1</property>
   <property name="mlt_service">kdenlivetitle</property>
-  <property name="kdenlive:clipname">Clip de título</property>
+  <property name="kdenlive:clipname">Propuestas</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" out="125" height="1080" LC_NUMERIC="es_CO.UTF-8">
  &lt;item z-index="0" type="QGraphicsTextItem">
@@ -39,7 +39,7 @@
   <property name="aspect_ratio">1</property>
   <property name="seekable">1</property>
   <property name="mlt_service">kdenlivetitle</property>
-  <property name="kdenlive:clipname">Clip de título (copia)</property>
+  <property name="kdenlive:clipname">GludZilla</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" out="125" height="1080" LC_NUMERIC="es_CO.UTF-8">
  &lt;item z-index="0" type="QGraphicsTextItem">
@@ -68,7 +68,7 @@
   <property name="aspect_ratio">1</property>
   <property name="seekable">1</property>
   <property name="mlt_service">kdenlivetitle</property>
-  <property name="kdenlive:clipname">Clip de título (copia)</property>
+  <property name="kdenlive:clipname">A Frame</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" out="125" height="1080" LC_NUMERIC="es_CO.UTF-8">
  &lt;item z-index="0" type="QGraphicsTextItem">
@@ -97,7 +97,7 @@
   <property name="aspect_ratio">1</property>
   <property name="seekable">1</property>
   <property name="mlt_service">kdenlivetitle</property>
-  <property name="kdenlive:clipname">Clip de título (copia)</property>
+  <property name="kdenlive:clipname">Utilidades Aprendidas</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" out="125" height="1080" LC_NUMERIC="es_CO.UTF-8">
  &lt;item z-index="0" type="QGraphicsTextItem">
@@ -127,7 +127,7 @@ aprendidas&lt;/content>
   <property name="aspect_ratio">1</property>
   <property name="seekable">1</property>
   <property name="mlt_service">kdenlivetitle</property>
-  <property name="kdenlive:clipname">Clip de título (copia)</property>
+  <property name="kdenlive:clipname">Espacios Virtualizados</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" out="125" height="1080" LC_NUMERIC="es_CO.UTF-8">
  &lt;item z-index="0" type="QGraphicsTextItem">
@@ -157,7 +157,7 @@ virtualizados&lt;/content>
   <property name="aspect_ratio">1</property>
   <property name="seekable">1</property>
   <property name="mlt_service">kdenlivetitle</property>
-  <property name="kdenlive:clipname">Clip de título (copia)</property>
+  <property name="kdenlive:clipname">Conclusiones</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" out="125" height="1080" LC_NUMERIC="es_CO.UTF-8">
  &lt;item z-index="0" type="QGraphicsTextItem">
@@ -182,6 +182,10 @@ virtualizados&lt;/content>
   <property name="length">287</property>
   <property name="eof">pause</property>
   <property name="resource">Blue - 22908.mp4</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">1</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">25</property>
@@ -208,10 +212,6 @@ virtualizados&lt;/content>
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">-1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:folderid">-1</property>
   <property name="meta.media.frame_rate_num">25</property>
   <property name="meta.media.frame_rate_den">1</property>
@@ -234,8 +234,8 @@ virtualizados&lt;/content>
   <property name="kdenlive:docproperties.enableproxy">0</property>
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
-  <property name="kdenlive:docproperties.kdenliveversion">17.12.3</property>
-  <property name="kdenlive:docproperties.position">157</property>
+  <property name="kdenlive:docproperties.kdenliveversion">18.04.1</property>
+  <property name="kdenlive:docproperties.position">0</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
